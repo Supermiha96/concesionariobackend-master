@@ -21,7 +21,8 @@
         }
 
         body {
-            font-family: "Aclonica";
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #bfe7eeb1;
         }
         a {
             text-decoration: none;
@@ -95,14 +96,18 @@
         }
 
         .cabecera {
+            color: whitesmoke;
             display: flex;
             align-items: center;
             padding: 1px;
-            background: #fdebc9;
+            background: #912376;
+            height: 150px;
+            justify-content: center;
 
         }
         .cabecera>img{
-            height: 50px;
+            height: 90px;
+            color: whitesmoke;
         }
 
         .metodo-verbo {
@@ -128,17 +133,35 @@
         }
 
         .metodo-descripcion {
-            padding-top: 10px;
+            padding-top: 5px;
             font-size: 13px;
             flex: 1 1 auto;
             word-break: break-word;
-            font-family: sans-serif;
+            font-family: "Aclonica";
             color: #3b4151;
         }
 
         h4 {
             border-bottom: 5px rgb(102, 100, 99);
             margin-bottom: 5px;
+        }
+        .footer{
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            padding: 1px;
+            background: #912376;
+            height: 70px;
+            justify-content: center;
+            font-size: 13px;
+        }
+        .footer a{
+            text-decoration: none;
+            color: inherit;
+            
+        }
+         a:hover{
+            color: #000;
         }
     </style>
 </head>
@@ -150,34 +173,32 @@
     </div>
     <p><small>Frontend en <a href="#">PROXIMAMENTE...</a></small></p>
 
-    <p><b>API RESTful</b></p>
-
     <div class="bloque">
         <h4>COCHES</h4>
         <div class="resumen metodo get">
             <span class="metodo-verbo http-get">GET</span>
             <span class="metodo-ruta">/api/coches</span>
-            <span class="metodo-descripcion">Obtener todos los coches.</span>
+            <span class="metodo-descripcion">-> Obtener todos los coches.</span>
         </div>
         <div class="resumen metodo post">
             <span class="metodo-verbo http-post">POST</span>
             <span class="metodo-ruta">/api/coches</span>
-            <span class="metodo-descripcion">Añadir un coche.</span>
+            <span class="metodo-descripcion">-> Añadir un coche.</span>
         </div>
         <div class="resumen metodo get">
             <span class="metodo-verbo http-get">GET</span>
             <span class="metodo-ruta">/api/coches/{id}</span>
-            <span class="metodo-descripcion">Obtener un coche.</span>
+            <span class="metodo-descripcion">-> Obtener un coche.</span>
         </div>
         <div class="resumen metodo update">
             <span class="metodo-verbo http-update">UPDATE</span>
             <span class="metodo-ruta">/api/coches/{id}</span>
-            <span class="metodo-descripcion">Modificar un coche.</span>
+            <span class="metodo-descripcion">-> Modificar un coche.</span>
         </div>
         <div class="resumen metodo delete">
             <span class="metodo-verbo http-delete">DELETE</span>
             <span class="metodo-ruta">/api/coches/{id}</span>
-            <span class="metodo-descripcion">Eliminar un coche.</span>
+            <span class="metodo-descripcion">-> Eliminar un coche.</span>
         </div>
     </div>
 
@@ -186,27 +207,27 @@
         <div class="resumen metodo get">
             <span class="metodo-verbo http-get">GET</span>
             <span class="metodo-ruta">/api/clientes</span>
-            <span class="metodo-descripcion">Obtener todos los clientes.</span>
+            <span class="metodo-descripcion">-> Obtener todos los clientes.</span>
         </div>
         <div class="resumen metodo post">
             <span class="metodo-verbo http-post">POST</span>
             <span class="metodo-ruta">/api/clientes</span>
-            <span class="metodo-descripcion">Añadir un cliente.</span>
+            <span class="metodo-descripcion">-> Añadir un cliente.</span>
         </div>
         <div class="resumen metodo get">
             <span class="metodo-verbo http-get">GET</span>
             <span class="metodo-ruta">/api/clientes/{id}</span>
-            <span class="metodo-descripcion">Obtener un cliente.</span>
+            <span class="metodo-descripcion">-> Obtener un cliente.</span>
         </div>
         <div class="resumen metodo update">
             <span class="metodo-verbo http-update">UPDATE</span>
             <span class="metodo-ruta">/api/clientes/{id}</span>
-            <span class="metodo-descripcion">Modificar un cliente.</span>
+            <span class="metodo-descripcion">-> Modificar un cliente.</span>
         </div>
         <div class="resumen metodo delete">
             <span class="metodo-verbo http-delete">DELETE</span>
             <span class="metodo-ruta">/api/clientes/{id}</span>
-            <span class="metodo-descripcion">Eliminar un cliente.</span>
+            <span class="metodo-descripcion">-> Eliminar un cliente.</span>
         </div>
     </div>
     <p>
@@ -216,6 +237,9 @@
             </b>
         </small>
     </p>
+    <footer class="footer">
+        <h1>Realizado por <a href="https://github.com/Supermiha96">Mihail Pistol</a></h1>
+    </footer>
 </body>
 
 </html>
